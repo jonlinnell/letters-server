@@ -1,0 +1,24 @@
+{
+  "name": "letters-server",
+  "version": "0.1.0",
+  "description": "Automate generating PDFs of student letters",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-preset-airbnb-base": "^1.0.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2"
+  }
+}
