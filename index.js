@@ -2,10 +2,13 @@ const express = require('express')
 
 require('dotenv').config()
 
-const { student } = require('./models')
+const { student, request } = require('./models')
 
-student.sync()
+async function syncTables() {
+  await student.sync()
+  await request.sync()
+}
+
+syncTables()
   .then(console.log('done'))
-  .catch((err) => {
-    throw new Error(err)
-  })
+  

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body {
+        font-size: 8pt;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      section.letterBody {
+        margin-top: 180px;
+      }
+
+      ul.officeContact {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: right;
+        font-size: 0.8rem;
+      }
+
+      p {
+        margin-bottom: 1em;
+      }
+
+      p.contact {
+        margin: 0;
+      }
+
+      span.bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="letterBody">
+      <ul class="officeContact">
+        <li>Direct Line: {{officePhone}}</li>
+        <li>Email: {{officeEmail}}</li>
+        <li>Web: {{officeWeb}}</li>
+      </ul>
+      <p>REF: <span class="bold">{{regno}}</span></p>
+      <p>{{currentDate}}</p>
+      <p>Dear Sir/Madam</p>
+      <p>Subject – <span class="bold">{{forenames}} {{familyName}}, {{regno}}</span></p>
+      <p>This is to certify that {{forenames}} {{familyName}} is registered as a {{progMethStud}} student at Loughborough University in the session 20{{version}} in year 1 of the {{programmeTitle}} programme. </p>
+      <p>This programme lasts for {{programmeLength}} year(s) and leads to the award of {{awardShortName}}. The programme began on {{startDate}} and is expected to cease on {{endDate}}.</p>
+      <p>{{forenames}} {{familyName}} is expected to graduate and receive their Master’s degree on {{graduationDate}}, if successful in completion of the course.</p>
+      <p>Yours faithfully,</p>
+      <p class="contact">Someone Someoneson</p>
+      <p class="contact">Senior Administration Officer</p>
+      <p class="contact">020 38048283</p>
+      <p class="contact">S.Someoneson@lboro.ac.uk</p>
+    </section>
+  </body>
+</html>
