@@ -23,5 +23,6 @@ module.exports = (sequelize, DataTypes) => sequelize.define('request', {
     allowNull: false,
   },
   error: DataTypes.BOOLEAN,
-  errorText: DataTypes.STRING
+  errorText: DataTypes.STRING,
+  filename: DataTypes.STRING,
 })
